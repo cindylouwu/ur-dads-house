@@ -55,6 +55,20 @@ class GenerateEvents:
         except:
             print(f"ERROR: Unable to load death reaction events for {family_relation}_{rel_value}.")
         return events
+    
+    #I'm not sure what this does, but Tiri is copying it.
+        @staticmethod
+    def get_camp_funeral_rites(biome):
+        try:
+            file_path = f"{resource_directory}/death/death_reactions/camp_funeral_rites/{biome}.json"
+            with open(
+                    file_path,
+                    "r",
+            ) as read_file:
+                events = ujson.loads(read_file.read())
+        except:
+            print(f"ERROR: Unable to load camp_funeral_rites {biome}.")
+        return events
 
     @staticmethod
     def clear_loaded_events():
