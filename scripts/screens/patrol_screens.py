@@ -7,7 +7,7 @@ import pygame_gui
 import ujson
 from .base_screens import Screens, cat_profiles
 from scripts.utility import get_text_box_theme, scale, get_personality_compatibility, check_relationship_value, \
-    get_omen_snippet_list, process_text, adjust_prey_abbr, adjust_patrol_text
+    get_special_snippet_list, process_text, adjust_prey_abbr, adjust_patrol_text
 from scripts.game_structure.image_button import UIImageButton, UISpriteButton
 from scripts.patrol import patrol
 from scripts.cat.cats import Cat
@@ -87,6 +87,12 @@ class PatrolScreen(Screens):
                     self.app_mentor = self.selected_cat.apprentice[self.selected_apprentice_index]
                     self.update_selected_cat()
                     self.update_button()
+        
+        elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
+            if event.key == pygame.K_LEFT:
+                self.change_screen("starclan screen")
+            elif event.key == pygame.K_RIGHT:
+                self.change_screen('list screen')
 
             # Check if mate cycle buttons are clicked.
             if "cycle_mate_left_button" in self.elements:
