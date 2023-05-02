@@ -58,7 +58,7 @@ class GenerateEvents:
         return events
     
     #I'm not sure what this does, but Tiri is copying it.
-        @staticmethod
+    @staticmethod
     def get_camp_funeral_rites(biome):
         try:
             file_path = f"{resource_directory}/death/death_reactions/camp_funeral_rites/{biome}.json"
