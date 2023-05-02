@@ -1,32 +1,32 @@
 [
     {
         "camp":"camp1", 
-        "tags":["solo", "body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["solo_dead", "body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"In the past moon, o_n_g has taken {PRONOUN/o_n_g/poss} place in StarClan. c_n have mourned their loss, and {PRONOUN/o_n_g/poss} friends and family shared the best, and sometimes the worst, moments of {PRONOUN/o_n_g/poss} lives in stories passed around the vigil as the elders carried {PRONOUN/o_n_g/object} to {PRONOUN/o_n_g/poss} final resting place dug for {PRONOUN/o_n_g/object} out in the forest." 
         },
         {
         "camp":"camp1", 
-        "tags":["solo", "body", "other_cat", "other_cat_lead", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["solo_dead", "body", "other_cat", "other_cat_lead", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"Watching over vigils for the dead is one of the most solemn of r_c's tasks. Having lost o_n_g this past moon, it is a duty {PRONOUN/r_c/subject} {VERB/r_c/dedicate/dedicates} {PRONOUN/r_c/self} to with quiet dignity, contributing words to {PRONOUN/o_n_g/poss} vigil, bowing {PRONOUN/r_c/poss} head over o_n_g's fur, following the elders as they carry the body to the grave they've prepared, showing with every pawstep and gesture of respect that c_n will not forget o_n_g."
         },
         {
         "camp":"camp1", 
-        "tags":["solo", "no_body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["solo_dead", "no_body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"In the past moon, o_n_g has taken {PRONOUN/o_n_g/poss} place in StarClan. c_n has mourned their loss, and {PRONOUN/o_n_g/poss} friends and family shared the best, and sometimes the worst, moments of {PRONOUN/o_n_g/poss} life in stories passed around the vigil. Without a body, the vigil lingers long into the night, and far more stories are shared."
         },
         {
         "camp":"camp1", 
-        "tags":["solo", "no_body", "other_cat", "other_cat_lead", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["solo_dead", "no_body", "other_cat", "other_cat_lead", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"Watching over vigils for the dead is one of the most solemn of r_c's tasks. Having lost o_n_g this past moon, it is a duty {PRONOUN/r_c/subject} {VERB/r_c/dedicate/dedicates} {PRONOUN/r_c/self} to with quiet dignity, contributing words to {PRONOUN/o_n_g/poss} vigil, checking on those who knew {PRONOUN/o_n_g/object}, stepping forward to help with the grim task of cleaning out o_n_g's nest, showing with every pawstep and gesture of respect that c_n will not forget o_n_g."
         },
         {
         "camp":"camp1", 
-        "tags":["multi", "body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["multi_dead", "body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"In the past moon, o_n_g have taken their places in StarClan. c_n has mourned their losses, and their friends and family shared the best, and sometimes the worst, moments of their lives in stories passed around the vigil as the elders carried them to their final resting place dug for them out in the forest."
         },
         {
         "camp":"camp1", 
-        "tags":["multi", "no_body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
+        "tags":["multi_dead", "no_body", "Newleaf", "Greenleaf", "Leaf-fall", "Leaf-bare"], 
         "event_text":"In the past moon, o_n_g have taken their places in StarClan. c_n has mourned their losses, and their friends and family shared the best, and sometimes the worst, moments of their lives in stories passed around the vigil. In replacement of their bodies, their nests are buried by the oldest cats of c_n instead."
         }
         
