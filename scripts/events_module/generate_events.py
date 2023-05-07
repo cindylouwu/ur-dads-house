@@ -3,6 +3,7 @@
 import random
 
 import ujson
+from scripts.cat.cats import Cat, cat_class
 from scripts.game_structure.game_essentials import game
 
 resource_directory = "resources/dicts/events/"
@@ -59,7 +60,7 @@ class GenerateEvents:
     
     #I'm not sure what this does, but Tiri is copying it.
     @staticmethod
-    def get_camp_funeral_rites(biome):
+    def get_camp_funeral_rites_dicts(biome):
         try:
             file_path = f"{resource_directory}/death/death_reactions/camp_funeral_rites/{biome}.json"
             with open(
@@ -118,6 +119,8 @@ class GenerateEvents:
 
                     # injury event only
                     injury=event["injury"] if "injury" in event else None,
+
+                    #funeral rites might need adding in here?
 
                     # new cat event only
                     loner=event["loner"] if "loner" in event else False,
@@ -368,6 +371,14 @@ class GenerateEvents:
                 if not int(random.random() * 2):
                     continue
 
+            #Check that the correct funeral rites are done for the right number of dead bodies
+            if "multi_dead" in event.tags and len(Cat.dead_cats) > 1:
+                    continue
+            
+            #Check that the correct funeral rites are done for the right number of dead bodies
+            if "solo_dead" in event.tags and len(Cat.dead_cats) > 2:
+                    continue
+
             # check other_cat status and other identifiers
             if other_cat:
                 if "other_cat_leader" in event.tags and other_cat.status != "leader":
@@ -518,6 +529,10 @@ class GenerateEvents:
         # print(possible_events)
 
         return possible_events
+    
+    #def possible_funeral_rites(self, war, body_status):
+        #possible_events_rites = []
+        
 
 
 class ShortEvent:

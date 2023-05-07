@@ -168,6 +168,36 @@ class Events():
                                  item[1]))
 
             Cat.grief_strings.clear()
+        
+        # Handle funeral rites
+
+        #if Cat.funeral_rites:
+            #remove_cats = []
+            #death_report_cats = []
+
+            # Grab all the dead or outside cats, who should not have the possability of being selected as random cats who're helping with funeral rites
+            #for ID in Cat.funeral_rites:
+                #check_cat = Cat.all_cats.get(ID)
+                #if check_cat:
+                    #if check_cat.dead or check_cat.outside:
+                        #remove_cats.append(check_cat.ID)
+                    #else:
+                        #death_report_cats.append(check_cat.ID)
+
+            # Remove the dead or outside cats
+            #for ID in remove_cats:
+                #if ID in Cat.funeral_rites:
+                    #Cat.funeral_rites.pop(ID)
+
+            # Generate events
+            #if Cat.dead_cats:
+                #game.cur_events_list.append(
+                    #Single_Event(item[0], ["birth_death", "ceremony"],
+                                 #item[1]))
+
+            #Cat.funeral_rites.clear()
+
+        #Maybe a different way?
 
         if Cat.dead_cats:
             ghost_names = []
@@ -208,7 +238,7 @@ class Events():
                         extra_event = f"So much grief and death has taken its toll on the cats of {game.clan.name}Clan. {insert} are particularly shaken by it."
 
             else:
-                event = f"The past moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
+                event = f"The past  moon, {insert} has taken their place in StarClan. {game.clan.name}Clan mourns their " \
                         f"loss, and their Clanmates will miss the spot they took up in their lives. Moments of their " \
                         f"life are shared in stories around the circle of mourners as those that were closest to them " \
                         f"take them to their final resting place."
